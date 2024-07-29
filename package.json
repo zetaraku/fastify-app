@@ -2,14 +2,14 @@
   "name": "fastify-app",
   "version": "0.0.0",
   "description": "This project was bootstrapped with Fastify-CLI.",
-  "main": "app.js",
+  "main": "app.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node --test test/**/*.test.js",
-    "start": "fastify start -l info app.js",
-    "dev": "fastify start -w -l info -P app.js"
+    "test": "node --test -r @swc-node/register test/**/*.test.ts",
+    "start": "fastify start -r @swc-node/register -l info app.ts",
+    "dev": "fastify start -r @swc-node/register -w -l info -P app.ts"
   },
   "keywords": [],
   "author": "Raku Zeta <zetaraku@gmail.com>",
