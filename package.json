@@ -21,5 +21,7 @@
     "@fastify/sensible": "^5.0.0",
     "fastify-cli": "^6.3.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@swc-node/register": "^1.10.9"
+  }
 }
